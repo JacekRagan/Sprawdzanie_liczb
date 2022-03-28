@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function sprawdz(){
+            var text = document.getElementById('pole').value;
+            if (text>0) document.getElementById('powiedz').innerHTML = 'dodatnia';
+            else if (text<0) document.getElementById('powiedz').innerHTML = 'ujemna';
+            else if (text==0) document.getElementById('powiedz').innerHTML = 'rowna 0';
+            else document.getElementById('powiedz').innerHTML = "To nie jest liczba wiesz o co chodzi cn";
+        }
+
+    </script>
+</head>
+<body>
+    <input id='pole' type="text">
+    <input type="submit" value="sprawdz" onclick="sprawdz()">
+
+    <div id="powiedz"></div>
+    
+</body>
+</html>
